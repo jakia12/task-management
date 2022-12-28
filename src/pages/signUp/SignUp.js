@@ -17,6 +17,7 @@ const SignUp = () => {
             .then(res => {
                 const user = res.user;
                 console.log(user);
+                alert("You are signed up successfully");
                 handleUpdateUser(data.name);
                 navigate('/addTask');
             })

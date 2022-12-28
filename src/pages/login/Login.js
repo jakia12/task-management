@@ -27,6 +27,7 @@ const Login = () => {
             .then(res => {
                 const user = res.user;
                 console.log(user);
+                alert("you are logged in successfully");
                 navigate(from, { replace: true });
             })
             .catch(err => {
