@@ -32,7 +32,7 @@ const Header = () => {
                         <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
                     </button>
                     <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg ">
-                        <ul class="flex items-center flex-col mt-4 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
+                        <ul class="flex items-center flex-col mt-4 rounded-lg bg-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
                             {
                                 user?.email ?
                                     (
@@ -45,6 +45,9 @@ const Header = () => {
                                             </li>
                                             <li>
                                                 <Link to="/completedTasks" class="block py-2 pl-3 pr-4 text-dark bg-dark rounded md:bg-transparent md:text-dark md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Completed Tasks</Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/media" class="block py-2 pl-3 pr-4 text-dark bg-dark rounded md:bg-transparent md:text-dark md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Media</Link>
                                             </li>
 
                                             <li>

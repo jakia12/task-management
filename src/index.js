@@ -6,18 +6,26 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import { store } from './store';
 import AuthProvider from './context/AuthProvider';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const queryClient = new QueryClient();
+
 root.render(
   <React.StrictMode>
-    <Provider store={store}>
+    <QueryClientProvider client={queryClient}>
+      <Provider store={store}>
 
-      <AuthProvider>
-        <App />
-      </AuthProvider>
+        <AuthProvider>
+          <App />
+        </AuthProvider>
 
-    </Provider>
+      </Provider>
+
+    </QueryClientProvider>
+
   </React.StrictMode>
 );
 

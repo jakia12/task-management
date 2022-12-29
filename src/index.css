@@ -8,14 +8,24 @@
 
 body {
     font-family: "Montserrat", sans-serif;
+
 }
 
+main {
+    min-height: 80vh !important
+}
 
 
 /*******banner height*******/
 .banner_h,
 middle {
     min-height: 90vh;
+}
+
+input[type='checkbox']:checked {
+    outline: none;
+    border: none;
+    color: #222
 }
 
 @media screen and (max-width: 768px) {

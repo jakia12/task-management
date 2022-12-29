@@ -1,5 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
 import React from 'react'
+import { useLoaderData } from 'react-router-dom';
 import { loading } from '../../data/AuthData';
 import { cartItems } from '../../data/placeholder';
 
@@ -10,6 +11,7 @@ const initialState = {
     total: 0,
 
 };
+
 
 const cartSlice = createSlice({
     name: 'cart',
